@@ -107,14 +107,15 @@ function App() {
           {/* Right side */}
           <div className="col-12 col-md-6">
             <div className="row mt-3">
-              <div className="col-12 col-lg-5">
-                <Transactions info={info} />
-              </div>
+               <div className="col-12 col-md-6 col-lg-5 mb-3">
+                  <Transactions info={info} />
+               </div>
 
-              <div className="col-12 col-lg-6">
-                <ExpenseChart info={info} COLORS={COLORS} />
-              </div>
-            </div>
+               <div className="col-12 col-md-6 col-lg-6 mb-3">
+                   <ExpenseChart info={info} COLORS={COLORS} />
+               </div>
+           </div>
+
 
             <Summary totalExpenses={totalExpenses} balance={balance} />
           </div>
